@@ -36,14 +36,9 @@
 * [GPL LICENSE](https://github.com/yoshiko2/Movie_Data_Capture/blob/master/LICENSE)
 * 若用户不同意上述条款任意一条，请勿使用本项目和项目成果
 
-# 下载
-* [Releases](https://github.com/yoshiko2/Movie_Data_Capture/releases/latest)
-
 # 贡献者
 [![](https://opencollective.com/movie_data_capture/contributors.svg?width=890)](https://github.com/yoshiko2/movie_data_Capture/graphs/contributors)
 
 # 友情链接
 * [CloudDrive](https://www.clouddrive2.com/)
 
-# Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=yoshiko2/Movie_Data_Capture&type=Date)](https://star-history.com/#yoshiko2/Movie_Data_Capture&Date)
