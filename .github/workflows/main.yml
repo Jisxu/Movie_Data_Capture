@@ -98,6 +98,12 @@ jobs:
           name: MDC-${{ env.VERSION }}-${{ runner.os }}-amd64
           path: dist
 
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: MDC-${{ env.VERSION }}-${{ runner.os }}-amd64
+          path: dist
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -116,8 +122,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ steps.upload_build_artifact.outputs.artifact_path }}
-          asset_name: ${{ steps.upload_build_artifact.outputs.artifact_name }}
+          asset_path: dist/MDC-${{ env.VERSION }}-${{ runner.os }}-amd64
+          asset_name: MDC-${{ env.VERSION }}-${{ runner.os }}-amd64
           asset_content_type: application/octet-stream
 
       - name: Run test (Ubuntu & MacOS)
