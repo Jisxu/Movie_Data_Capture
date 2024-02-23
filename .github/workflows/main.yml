@@ -7,6 +7,8 @@ on:
   pull_request:
     branches:
       - master
+  issues:
+    types: [opened,labeled]
 
 jobs:
   build:
@@ -17,7 +19,10 @@ jobs:
         os: [windows-latest, macos-latest, ubuntu-latest]
 
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout 6.6.7
+        uses: actions/checkout@v2
+        with:
+          ref: '6.6.7'
 
       - name: Install UPX
         uses: crazy-max/ghaction-upx@v2
