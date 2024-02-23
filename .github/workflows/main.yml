@@ -104,7 +104,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v6.6.7
+          tag_name: 6.6.7_build
           release_name: Release 6.6.7
           draft: false
           prerelease: false
